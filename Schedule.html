@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedules Management</title>
+    <link href="RoutesManagement.css" rel="stylesheet">
+    <link rel="stylesheet" href="addButton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="Script.js"></script>
+</head>
+<body>
+    <div class="total">
+        <div class="totalNav">
+            <div class="logo" id="homeAdmin">
+                <img src="Image\images.png" alt="">
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-bus"></i>
+                <label for="ScheManage" id="ScheManage1">Manage Bus</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-route"></i>
+                <label for="ScheManage" id="ScheManage2">Manage Routes</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-ticket"></i>
+                <label for="ScheManage" id="ScheManage3">Tickets</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <label for="ScheManage" id="ScheManage4">List Bookings</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-credit-card"></i>
+                <label for="ScheManage" id="ScheManage5">Payment Details</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-calendar-days"></i>
+                <label for="ScheManage" id="ScheManage">Manage Schedule</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <label for="ScheManage" id="ScheManage6">Reports</label>
+            </div>
+        </div>
+        <div class="routesManage">
+            <h1>Schedule Management</h1>
+            <input type="searchSchedule" placeholder="Search Schedule">
+            <button onclick="openModal()">Add Schedule</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <h2>Add routes details</h2>
+                    <form class="form">
+                      <label for="busNo">Code</label><br>
+                      <input type="text" id="busNo" name="busNo" required><br>
+                        
+                      <label for="busDriver">Origin</label><br>
+                      <input type="text" id="busDriver" name="busDriver" required><br>
+            
+                      <label for="busRoute">Destination</label><br>
+                      <input type="text" id="busRoute" name="busRoute" required><br>
+
+                      <label for="busDriver">Arrival</label><br>
+                      <input type="time" id="busDriver" name="busDriver" required><br>
+
+                      <label for="busDriver">Departure</label><br>
+                      <input type="time" id="busDriver" name="busDriver" required><br>
+
+                      <label for="busDriver">Price</label><br>
+                      <input type="text" id="busDriver" name="busDriver" required><br><br>
+                        
+                      <button>Confirm</button>
+                      </form>
+                </div>
+              </div>
+            <table>
+                <th>Code</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+                <th>Price</th>
+                <tr>
+                    <td>SCH 111</td>
+                    <td>Arusha</td>
+                    <td>Dar es salaam</td>
+                    <td>06 : 00 AM</td>
+                    <td>04 : 00 PM</td>
+                    <td>TSH 30,000/=</td>
+                </tr>
+                <tr>
+                    <td>SCH 111</td>
+                    <td>Arusha</td>
+                    <td>Dar es salaam</td>
+                    <td>06 : 00 AM</td>
+                    <td>04 : 00 PM</td>
+                    <td>TSH 30,000/=</td>
+                </tr>
+                <tr>
+                    <td>SCH 111</td>
+                    <td>Arusha</td>
+                    <td>Dar es salaam</td>
+                    <td>06 : 00 AM</td>
+                    <td>04 : 00 PM</td>
+                    <td>TSH 30,000/=</td>
+                </tr>
+                <tr>
+                    <td>SCH 111</td>
+                    <td>Arusha</td>
+                    <td>Dar es salaam</td>
+                    <td>06 : 00 AM</td>
+                    <td>04 : 00 PM</td>
+                    <td>TSH 30,000/=</td>
+                </tr>
+                <tr>
+                    <td>SCH 111</td>
+                    <td>Arusha</td>
+                    <td>Dar es salaam</td>
+                    <td>06 : 00 AM</td>
+                    <td>04 : 00 PM</td>
+                    <td>TSH 30,000/=</td>
+                </tr>
+                <tr>
+                    <td>SCH 111</td>
+                    <td>Arusha</td>
+                    <td>Dar es salaam</td>
+                    <td>06 : 00 AM</td>
+                    <td>04 : 00 PM</td>
+                    <td>TSH 30,000/=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script defer src="Script6.js"></script>
+</body>
+</html>

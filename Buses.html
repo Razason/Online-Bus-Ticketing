@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="RoutesManagement.css" rel="stylesheet">
+    <link rel="stylesheet" href="addButton.css">
+</head>
+<body>
+  <div class="total">
+    <div class="totalNav">
+      <div class="logo" id="homeAdmin">
+          <img src="Image\images.png" alt="">
+      </div>
+      <div class="allabel">
+        <i class="fa-solid fa-bus"></i>
+        <label for="">Manage Bus</label>
+    </div>
+    <div class="allabel">
+        <i class="fa-solid fa-route"></i>
+        <label for="busManage1" id="busManage1">Manage Routes</label>
+    </div>
+    <div class="allabel">
+        <i class="fa-solid fa-ticket"></i>
+        <label for="busManage2" id="busManage2">Tickets</label>
+    </div>
+    <div class="allabel">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <label for="busManage3" id="busManage3">List Bookings</label>
+    </div>
+    <div class="allabel">
+        <i class="fa-solid fa-credit-card"></i>
+        <label for="busManage4" id="busManage4">Payment Details</label>
+    </div>
+    <div class="allabel">
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="busManage5" id="busManage5">Manage Schedule</label>
+    </div>
+    <div class="allabel">
+        <i class="fa-solid fa-file-circle-check"></i>
+        <label for="busManage6" id="busManage6">Reports</label>
+    </div>
+  </div>
+    <div class="routesManage">
+      <h1>Buses Management</h1>
+      <input type="searchbus" placeholder="Search bus...">
+      <button id="addBus" onclick="openModal()">Add Bus</button>
+      
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Add bus details</h2>
+            <form class="form">
+              <label for="busNo">Bus Number</label><br>
+              <input type="text" id="busNo" name="busNo" required><br><br>
+                
+              <label for="busDriver">Bus Driver</label><br>
+              <input type="text" id="busDriver" name="busDriver" required><br><br>
+    
+              <label for="busRoute">Bus Routes</label><br>
+              <input type="text" id="busRoute" name="busRoute" required><br><br>
+                
+              <button>Confirm</button>
+              </form>
+        </div>
+      </div>
+      <table>
+        <th>Bus Number</th>
+        <th>Bus Driver</th>
+        <th>Bus Route</th>
+        <th>Status</th>
+        <tr>
+          <td>T 450 ABC</td>
+          <td>Iddi Mohamed</td>
+          <td>Arusha - Kilimanjaro - Tanga</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>T 450 ABC</td>
+          <td>Iddi Mohamed</td>
+          <td>Arusha - Kilimanjaro - Tanga</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>T 450 ABC</td>
+          <td>Iddi Mohamed</td>
+          <td>Arusha - Kilimanjaro - Tanga</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>T 450 ABC</td>
+          <td>Iddi Mohamed</td>
+          <td>Arusha - Kilimanjaro - Tanga</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>T 450 ABC</td>
+          <td>Iddi Mohamed</td>
+          <td>Arusha - Kilimanjaro - Tanga</td>
+          <td>Active</td>
+        </tr>
+      </table>
+   </div>
+  </div>
+  <script defer src="Script1.js"></script>
+</body>
+</html>

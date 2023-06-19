@@ -1,0 +1,80 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(3, 105, 126), rgba(112, 104, 12, 0.767));
+}
+.routesManage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+th{
+    width: 100em;
+    height: 40px;
+    background: rgb(113, 182, 243);
+}
+td{
+    text-align: center;
+    background-color: bisque;
+    height: 70px;
+}
+.routesManage h1{
+    font-size: 70px;
+    margin: 0;
+}
+.routesManage input{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+.routesManage button{
+    padding: 7px;
+    border-radius: 10px;
+    background:  rgb(14, 212, 120);
+}
+.total{
+    display: flex;
+    position: fixed;
+}
+.allabel{
+    background: rgba(0, 0, 0, 0.171);
+    position: relative;
+    display: flex;
+    padding: 10px;
+    min-height: 83px;
+    width: 250px;
+    text-align: center;
+}
+.totalNav .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.171);
+    padding: 10px;
+}
+.totalNav .logo img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid rgb(252, 252, 253);
+}
+.allabel i{
+    color: rgb(113, 179, 234);
+    padding: 10px;
+    position: relative;
+    font-size: 27px;
+    text-align: center;
+    cursor: initial;
+}
+.allabel label{
+    padding-top: 6px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 23px;
+    color:rgb(255, 255, 255);
+}

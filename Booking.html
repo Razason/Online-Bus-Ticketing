@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link href="Style.css" rel="stylesheet">
+</head>
+<body class="d">
+    <h1>Made your ticket here</h1>
+      <div class="ticket">
+        <ul>
+            <li>
+                <div class="ticketForm">
+                    <label for="">From</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text"></div>
+            </li>
+            <li>
+                <div class="ticketForm">
+                    <label for="">To</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text"></div>
+            </li>
+            <li>
+                <div class="ticketForm">
+                    <label for="">Date</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="date" ></div>
+            </li>
+            <li>
+                <div class="ticketForm">
+                    <label for="ticketClass">Class</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="class" id="ticketClass" >
+                        <option value="v"></option>
+                        <option value="class1">Economic Class</option>
+                        <option value="class2">Luxury Class</option>
+                    </select></div>
+            </li>
+            <!-- <li>
+                <div class="ticketForm">
+                    <label for="">Choose seat</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;  
+                    <input type="list"></div>
+            </li> -->
+            <li>
+                <div class="ticketForm">
+                    <label for="">Passengers</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                    <input type="text"></div>
+            </li>
+            <li>
+                <div class="ticketForm">
+                    <label for="">Gender</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="gender" id="gender">
+                        <option value="v"></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select></div>
+            </li>
+        </ul>
+        <div class="ticketsearch">
+            <button>Search</button>
+        </div>
+        <button class="backHome" onclick="returnHome()">Back</button>
+      </div>
+      
+      <script>
+        function returnHome(){
+            window.location.href = "Home.html";
+        }
+    </script>
+</body>
+</html>

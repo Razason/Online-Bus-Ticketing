@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routes Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="addButton.css">
+    <link href="RoutesManagement.css" rel="stylesheet">
+</head>
+<body>
+    <div class="total">
+        <div class="totalNav">
+            <div class="logo" id="homeAdmin">
+                <img src="Image\images.png" alt="">
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-bus"></i>
+                <label for="routeManage" id="routeManage1">Manage Bus</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-route"></i>
+                <label for="routeManage" id="routeManage">Manage Routes</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-ticket"></i>
+                <label for="routeManage" id="routeManage2">Tickets</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <label for="routeManage" id="routeManage3">List Bookings</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-credit-card"></i>
+                <label for="routeManage" id="routeManage4">Payment Details</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-calendar-days"></i>
+                <label for="routeManage" id="routeManage5">Manage Schedule</label>
+            </div>
+            <div class="allabel">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <label for="routeManage" id="routeManage6">Reports</label>
+            </div>
+        </div>
+        <div class="routesManage">
+            <h1>Routes Management</h1>
+            <input type="routeSearch" placeholder="Search Route">
+            <button onclick="openModal()">Add Route</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <h2>Add routes details</h2>
+                    <form class="form">
+                      <label for="busNo">Route Code</label><br>
+                      <input type="text" id="busNo" name="busNo" required><br><br>
+                        
+                      <label for="busDriver">From</label><br>
+                      <input type="text" id="busDriver" name="busDriver" required><br><br>
+            
+                      <label for="busRoute">Terminal</label><br>
+                      <input type="text" id="busRoute" name="busRoute" required><br><br>
+
+                      <label for="busDriver">To</label><br>
+                      <input type="text" id="busDriver" name="busDriver" required><br><br>
+                        
+                      <button>Confirm</button>
+                      </form>
+                </div>
+              </div>
+            <table>
+                <th>Route Code</th>
+                <th>From</th>
+                <th>Terminal</th>
+                <th>To</th>
+
+                <tr>
+                    <td>RZ 001</td>
+                    <td>Arusha</td>
+                    <td>Dodoma</td>
+                    <td>Dar es salaam</td>
+                </tr>
+                <tr>
+                    <td>RZ 001</td>
+                    <td>Arusha</td>
+                    <td>Dodoma</td>
+                    <td>Dar es salaam</td>
+                </tr>
+                <tr>
+                    <td>RZ 001</td>
+                    <td>Arusha</td>
+                    <td>Dodoma</td>
+                    <td>Dar es salaam</td>
+                </tr>
+                <tr>
+                    <td>RZ 001</td>
+                    <td>Arusha</td>
+                    <td>Dodoma</td>
+                    <td>Dar es salaam</td>
+                </tr>
+                <tr>
+                    <td>RZ 001</td>
+                    <td>Arusha</td>
+                    <td>Dodoma</td>
+                    <td>Dar es salaam</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td>RZ 001</td>
+                    <td>Arusha</td>
+                    <td>Dodoma</td>
+                    <td>Dar es salaam</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script defer src="Script2.js"></script>
+</body>
+</html>
